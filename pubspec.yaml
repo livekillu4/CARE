@@ -1,0 +1,54 @@
+name: krankmelde_app
+description: "A new Flutter project."
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_email_sender: ^8.0.0
+  path_provider: ^2.1.5
+  intl: ^0.20.2
+  device_preview: ^1.3.1
+  open_file_manager: ^2.0.1
+  file_picker: ^10.3.3
+  multi_select_flutter: ^4.1.3
+  shared_preferences: ^2.3.2
+  xml: ^6.6.1
+  flutter_phoenix: ^1.1.1
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+ 
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/AppLogoIcon.png"
+  adaptive_icon_foreground: "assets/AppLogoIcon.png"
+  adaptive_icon_background: "#004F57" 
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/
+
+flutter_native_splash:
+  color: "#004F57"
+  image: assets/AppLogoLoadingScreen.png
+  fullscreen: true
+  android_12:
+    image: assets/AppLogoLoadingScreen.png
+    icon_background_color: "#004F57"
+    fullscreen: true
